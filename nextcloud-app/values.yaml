@@ -73,7 +73,7 @@ autoscaling:
 
 nfs:
   server: 192.168.37.105
-  path: "/mnt/IT-Academy/nfs-data/sa2-25-23/baranau/jenkins"  
+  path: "/mnt/IT-Academy/nfs-data/sa2-25-23/baranau/nextcloud/"  
   readOnly: false
   vers: 3
 
