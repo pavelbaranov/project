@@ -6,10 +6,9 @@ replicaCount: 1
 namespace: my-nextcloud
 
 image:
-  repository: new_app
-  pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: "baranau_01"
+  repository: ghcr.io/pavelbaranov/nextcloud
+  pullPolicy: Always
+  tag: "latest"
 
 env:
   - name: MYSQL_HOST
@@ -74,7 +73,7 @@ autoscaling:
 
 nfs:
   server: 192.168.37.105
-  path: "/mnt/IT-Academy/nfs-data/sa2-25-23/baranau"
+  path: "/mnt/IT-Academy/nfs-data/sa2-25-23/baranau/jenkins"  
   readOnly: false
   vers: 3
 
